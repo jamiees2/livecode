@@ -58,9 +58,9 @@ var render = function() {
     var source = prepareSource();
  
     var iframe = $('iframe#output'),
-        iframe_doc = iframe.get(0).contentDocument;
+        doc = iframe.get(0).contentDocument;
  
-    iframe_doc.open();
-    iframe_doc.write(source);
-    iframe_doc.close();
+    doc.open();
+    doc.write(source);
+    doc.close();
 };
